@@ -14,7 +14,7 @@ const Footer = () => {
     >
       <Container>
         <Row>
-          <Col style={{color: "gray"}} className="text-center py-3">Made With ❤, Personal Pad</Col>
+          <Col style={{color: "black"}} className="text-center py-3">Made With ❤, Personal Pad</Col>
         </Row>
       </Container>
     </footer>

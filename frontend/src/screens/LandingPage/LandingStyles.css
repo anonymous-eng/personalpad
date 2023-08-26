@@ -1,60 +1,54 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.title {
+  font-size: 45px;
 }
 
-body {
-  min-height: 100vh;
-  overflow-x: hidden;
+.subtitle {
+  font-size: 25px;
+  padding-top: 10px;
 }
 
-.buttonContainerLeft {
-  margin-bottom: 150px;
-  padding-right: 60px;
-}
-
-.buttonContainerRight {
-  margin-bottom: 150px;
-  padding-left: 60px;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
+.intro-text {
   width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
+  text-align: center;
 }
 
-.parallax {
-  position: relative;
+.main {
+  min-height: 93vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: url('./images/background.png') no-repeat;
-  background-size: cover;
+  background-image: url("../../background1.jpg");
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
 }
 
-.parallax img {
-  position: absolute;
-  left: 0;
-  pointer-events: none;
+.buttonContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.parallax img#gate-left {
-  position: fixed;
-  transform: translateX(-282px);
+.landingbutton {
+  width: 200px;
+  height: 55px;
 }
 
-.parallax img#gate-right {
-  position: fixed;
-  transform: translateX(305px);
+@media only screen and (min-width: 1200px) {
+  .buttonContainer {
+    padding: 0 200px;
+  }
+
+  .title {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .landingbutton {
+    width: 150px;
+    height: 50px;
+  }
 }
